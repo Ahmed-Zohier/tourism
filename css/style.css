@@ -1,0 +1,267 @@
+.carousel-caption h5 {
+    color: #fff; /* لون العنوان */
+    font-size: xx-large;
+}
+
+.carousel-item{
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.carousel-caption p {
+    color: #fff; /* لون النص */
+    /* background-color: rgba(0, 0, 0, 0.5);  */
+    /* خلفية نصف شفافة للنص */
+    padding: 10px;
+    
+}
+
+.carousel-item,.img{
+    background-color: black;
+    background-color: rgba(0, 0, 0, 0.9);
+    background-blend-mode: overlay;
+}
+
+.caaard{
+    background-image: url(../img/جبل-مرة.webp);
+}
+
+
+.carousel-item,.p{
+    font-size:x-large ;
+}
+
+
+.social-icons{
+z-index:40;
+
+}
+
+.image-container{
+    background-attachment: fixed;
+    background-image: url(../img/17-02-14_09-28-32.jpg);
+ height: 50vh;
+ background-repeat: no-repeat;
+ background-size: cover;
+}
+
+/* .img-fluid{
+    background-attachment: fixed;
+    background-image: url(../img/17-02-14_09-28-32.jpg);
+} */
+
+.container-custom {
+    margin-top: 50px;
+}
+
+.card {
+    position: relative;
+    overflow: hidden;
+}
+
+.card img {
+    width: 100%;
+    display: block;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    opacity: 1;
+    transition: opacity 0.3s ease;
+}
+
+.overlay::before,
+.overlay::after {
+    content: '';
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 10;
+}
+
+.overlay::before {
+    width: 100%;
+    height: 0;
+    top: 0;
+    left: 0;
+    transition: height 0.4s ease;
+}
+
+.overlay::after {
+    width: 0;
+    height: 100%;
+    bottom: 0;
+    right: 0;
+    transition: width 0.4s ease;
+}
+
+.card:hover .overlay::before {
+    height: 100%;
+}
+
+.card:hover .overlay::after {
+    width: 100%;
+}
+
+.card:hover .overlay {
+    opacity: 0;
+}
+
+
+
+
+/* ------------------- */
+.container-custom {
+    margin-top: 50px;
+}
+
+.card {
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: none;
+    text-align: center;
+}
+
+.card:hover {
+    transform: scale(0.9);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+.card img.bg-img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.profile-img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    border: 3px solid white;
+}
+
+.card-body {
+    padding: 20px;
+}
+
+.card-body p {
+    margin-top: 10px;
+}
+
+
+.custom-card {
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 255, 0.2); /* ظل باللون الأزرق */
+    padding: 20px;
+    border-radius: 10px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.custom-card img {
+    max-width: 150px;
+    height: auto;
+    border-radius: 10px;
+}
+
+.card-content {
+    flex-grow: 1;
+    margin-left: 20px;
+}
+
+.card-content h4 {
+    font-size: 1.5rem;
+}
+
+.card-content p {
+    margin-bottom: 0;
+}
+
+.divider {
+    width: 100%;
+    height: 2px;
+    background-color: #007bff;
+    margin: 10px 0;
+}
+
+.scrollable-text {
+    max-height: 100px;
+    overflow-y: auto;
+    padding-right: 10px;
+}
+
+.buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.buttons button {
+    flex-grow: 1;
+    margin: 0 5px;
+}
+
+
+/* الايقونات */
+
+.custom-card {
+    text-align: center;
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    transition: transform 0.3s;
+}
+
+.custom-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.icon {
+    width: 50px; /* يمكنك تعديل الحجم حسب الحاجة */
+    height: 50px; /* يمكنك تعديل الحجم حسب الحاجة */
+}
+
+
+
+
+  
+
+
+
+
+
+
+
+
+footer {
+    background-color:rgb(85, 83, 83);
+    color: white;
+    padding: 20px 0;
+  }
+  footer h5 {
+    font-size: 1.2rem;
+  }
+  .footer-logo {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 10px;
+  }
+  .copyright {
+    text-align: center;
+    padding-top: 20px;
+    font-size: 0.9rem;
+    color: #ff00ff;
+  }

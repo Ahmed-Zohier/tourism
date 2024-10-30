@@ -1,0 +1,557 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">    
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand text-white" href="#">سودانير</a>
+          <button class="navbar-toggler bg-info text-white" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon text-white"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active text-white" aria-current="page" href="#">الريسية</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white" href="#">السياحة</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle text-white border border-2px border-info rounded" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  المدن
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="#">الخرطوم</a></li>
+                  <li><a class="dropdown-item" href="#"> بورسودان</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#"> كسلا </a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link disabled text-white" href="#" tabindex="-1" aria-disabled="true">اتصل بنا </a>
+              </li>
+            </ul>
+            <form class="d-flex">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-info me-1" type="submit">Search</button>
+              <button class="btn btn-outline-info me-1" type="button" id="log" data-bs-toggle="modal" data-bs-target="#loin">login</button>
+
+            </form>
+          </div>
+        </div>
+      </nav>
+<!-- --------------------------------------------------------فورم التسجيل -->
+<div class="modal" tabindex="-1" id="loin">
+  <div class="modal-dialog">
+      <div class="modal-content">
+          <div class="modal-header">
+              <h5 class="modal-title">التسجيل الي الموقع </h5>
+              <button type="button" class="btn-close ms-4 data-bs-dismiss= modal aria-label=Close"></button>
+          </div>
+          <form  class="d-block gap-4 mt-2 me-5">
+            
+          <input type="text" name="name" id=""class="d-block mt-2 rounded-3 border-1" placeholder="الاسم"> 
+          <br>
+          <input type="email" name="email" id="" class="d-block mt-2 rounded-3 border-1" placeholder="البريد الاكتروني ">
+          <br>
+          <div class="form-check form-switch">
+            <input class="form-check-input ms-5" type="checkbox" id="flexSwitchCheckDefault">
+            <label class="form-check-label text-center " for="flexSwitchCheckDefault">تغير الوضع</label>
+          </div>
+        </form>
+     
+          <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+              <button type="button" class="btn btn-primary">Save changes</button>
+          </div>
+      </div>
+  </div>
+      </div>
+      <!-- ----------- -->
+      <div class="social-icons position-fixed  d-flex flex-column " style="right: 20px; bottom: 20px;">
+        <a href="#" class="mb-2"><i class="fab fa-facebook fa-2x"></i></a>
+        <a href="#" class="mb-2"><i class="fab fa-whatsapp fa-2x"></i></a>
+        <a href="#" class="mb-2"><i class="fab fa-twitter fa-2x"></i></a>
+        <a href="#" class="mb-2"><i class="fab fa-linkedin fa-2x"></i></a>
+        <a href="#"><i class="fab fa-instagram fa-2x"></i></a>
+    </div>
+    
+<!-- ----------------------------------------الاسلايدر المتحرك------------------------------------- -->
+<div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+  </div>
+  <div class="carousel-inner">
+      <div class="carousel-item active">
+          <img src="./img/خلفيه1.jpeg" class="d-block w-100" style="height: 80vh;" alt="...">
+          <div class="carousel-caption d-flex flex-column justify-content-center align-items-center" style="top: 0; bottom: 0;">
+              <h5 class="text-center text-dark text-xxl"> استكشاف الجمال الطبيعي</h5>
+              <p class="text-center">تُعد الطبيعة أحد أبرز وجهات السياحة، حيث يمكن للزوار الاستمتاع بالمناظر الخلابة والأنشطة المتنوعة مثل المشي وركوب الدراجات.</p>
+              <button type="button" class="btn btn-success">اتصل بنا</button>
+          </div>
+        
+        
+      </div>
+      <div class="carousel-item">
+          <img src="./img/خلفية2.jpeg" class="d-block w-100" alt="..." style="height: 80vh;">
+          <div class="carousel-caption d-flex flex-column justify-content-center align-items-center" style="top: 0; bottom: 0;">
+              <h5 class="text-center"> الثقافة المحلية</h5>
+              <p class="text-center">تتيح السياحة للزوار فرصة التعرف على الثقافات المحلية من خلال الفنون والموسيقى والمأكولات، مما يعزز من تجربة السفر.</p>
+              <button type="button" class="btn btn-success">اتصل بنا</button>
+          </div>
+          
+        
+      </div>
+      <div class="carousel-item">
+          <img src="./img/خلفية3.jpeg" class="d-block w-100 bg-opacity-50 bg-" alt="..." style="height: 80vh;">
+          <div class="carousel-caption d-flex flex-column justify-content-center align-items-center" style="top: 0; bottom: 0;">
+              <h5 class="text-center"> السياحة المستدامة</h5>
+              <p class="text-center">تعتبر السياحة المستدامة ضرورية للحفاظ على البيئة والتراث الثقافي، من خلال دعم المشاريع المحلية واستخدام وسائل النقل الصديقة للبيئة.</p>
+              <button type="button" class="btn btn-success">اتصل بنا</button>
+          </div>
+          
+        
+      </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+  </button>
+</div>
+
+<!--  -->
+<div class="container text-center p-5 bg-info w-100 mt-3">
+  <h2 class="mb-3"> سودانير للسفر والسياحة</h2>
+  <p class="mb-4">
+    شركة سوادنير للسفر والسياحة هي شركة رائدة في تقديم خدمات السفر والسياحة المتكاملة، حيث تسعى لتقديم تجربة سفر فريدة ومميزة لعملائها. تقدم سوادنير خدمات متعددة تشمل حجوزات الطيران والفنادق، تنظيم الرحلات السياحية الجماعية والفردية، بالإضافة إلى برامج مخصصة لزيارة أهم المعالم السياحية والثقافية في مختلف الوجهات حول العالم. تلتزم سوادنير بالجودة العالية والاحترافية، وتهتم بتلبية احتياجات عملائها من خلال توفير خيارات سفر مرنة، واستشارات مهنية من فريق متخصص لتلبية كل التوقعات بأعلى مستويات الراحة والأمان.  </p>
+  <a href="#" class="btn btn-primary">اضغط هنا</a>
+</div>
+<!--  -->
+
+<div class="accordion mt-5 mx-5" id="accordionExample">
+  <h2 class="text-center mb-3 ">الأسلة الشائعه</h2>
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="headingOne">
+      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+        ما هو أفضل وقت للسفر إلى الوجهة التي اخترتها؟      </button>
+    </h2>
+    <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+      <div class="accordion-body">
+        <strong>
+          يعتمد أفضل وقت للسفر على الوجهة المختارة، حيث تُعتبر الفصول السياحية مثل الصيف والربيع مناسبة لزيارة الشواطئ والمنتجعات، بينما الشتاء والخريف مناسبين لوجهات مثل الجبال والمناطق الصحراوية أو البلدان التي تتميز بموسم الأمطار. يُفضل دائمًا البحث عن المواسم التي يكون فيها الطقس ملائمًا وأقل ازدحامًا للاستمتاع بتجربة مريحة.
+        </strong>  
+      </div>
+    </div>
+  </div>
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="headingTwo">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+        ما هي المتطلبات الأساسية للتأشيرات والجوازات للسفر إلى بلد معين؟
+      </button>
+    </h2>
+    <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+      <div class="accordion-body">
+        <strong>
+          
+        تختلف متطلبات التأشيرات والجوازات من بلد لآخر. يُفضل التأكد من صلاحية جواز السفر بحيث لا تقل عن 6 أشهر قبل موعد السفر، والتواصل مع السفارة أو القنصلية لمعرفة متطلبات التأشيرة إن وجدت. بعض الدول تقدم تأشيرات إلكترونية يمكن التقديم عليها عبر الإنترنت، بينما البعض الآخر يتطلب تأشيرات مسبقة أو إجراءات خاصة.
+      </strong>
+      </div>
+    </div>
+  </div>
+  <div class="accordion-item ">
+    <h2 class="accordion-header" id="headingThree">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+        هل من الأفضل شراء التأمين الصحي للسفر؟      </button>
+    </h2>
+    <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+      <div class="accordion-body">
+        <strong>
+          نعم، يُنصح بشدة بشراء تأمين صحي عند السفر، خاصةً إلى الخارج. يغطي التأمين الصحي نفقات الطوارئ الطبية وحالات فقدان الأمتعة أو إلغاء الرحلات غير المتوقعة. العديد من الوجهات، خصوصًا في أوروبا، تشترط وجود تأمين صحي كجزء من متطلبات التأشيرة.        </strong> 
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="container mt-5">
+  <div class="card p-4">
+      <h5 class="mb-3">النص الذي يمكن نسخه</h5>
+      <textarea id="textToCopy" class="form-control mb-3" rows="3">هذا هو النص الذي يمكنك نسخه.</textarea>
+      <button id="copyButton" class="btn btn-primary w-25 me-4" onclick="copyText()">نسخ النص</button>
+      <p id="copyMessage" class="text-success mt-2" style="display:none;">تم نسخ النص!</p>
+  </div>
+</div>
+
+<div class="container mt-5">
+  <div class="card p-4">
+      <h5 class="mb-3">النص الذي يمكن نسخه</h5>
+      <textarea id="textToCopy" class="form-control mb-3" rows="3">هذا هو النص الذي يمكنك نسخه.</textarea>
+      <button id="copyButton" class="btn btn-primary w-25 me-4" onclick="copyText()">نسخ النص</button>
+      <p id="copyMessage" class="text-success mt-2 " style="display:none;">تم نسخ النص!</p>
+  </div>
+</div>
+
+<div class="container mt-5">
+  <div class="card p-4">
+      <h5 class="mb-3">النص الذي يمكن نسخه</h5>
+      <textarea id="textToCopy" class="form-control mb-3" rows="3">هذا هو النص الذي يمكنك نسخه.</textarea>
+      <button id="copyButton" class="btn btn-primary w-25 me-4" onclick="copyText()">نسخ النص</button>
+      <p id="copyMessage" class="text-success mt-2" style="display:none;">تم نسخ النص!</p>
+  </div>
+</div>
+
+
+<!-- ----- -->
+
+
+<div class="container mt-5">
+  <div class="image-container" data-aos="fade-down">
+      <!-- <img src="." class="img-fluid" alt="صورة مع التأثير"> -->
+  </div>
+</div>
+<!-- --------- -->
+<div class="container mt-5">
+  <div class="row">
+    <!-- الكرت الأول -->
+    <div class="col-md-4 col-sm-12 mb-4">
+      <div class="card" style="width: 100%;">
+        <img src="./img/11.jpeg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">فرنسا</h5>
+          <p class="card-text">
+            تعد فرنسا واحدة من أكثر الوجهات السياحية شهرة، وتشتهر بمدنها الرومانسية، وخاصة باريس، ومعالمها الأيقونية مثل برج إيفل ومتحف اللوفر. تجمع فرنسا بين التاريخ والفن والطبيعة، بالإضافة إلى منتجعات الريفيرا الفرنسية وجبال الألب التي تجذب هواة التزلج.          </p>
+          <a href="#" class="btn btn-primary">احجز الان </a>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-4 col-sm-12 mb-4">
+      <div class="card" style="width: 100%;">
+        <img src="./img/12.webp" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">إيطاليا</h5>
+          <p class="card-text">
+            إيطاليا بلد غارق في التاريخ والثقافة، من مدينة روما العريقة والكولوسيوم إلى فنون فلورنسا وسحر القنوات في البندقية. تجذب إيطاليا محبي الثقافة والطعام، وتقدم تجربة غنية لا تُنسى مع تراثها الفني والمعماري.          </p>
+            <a href="#" class="btn btn-primary">احجز الان </a>
+          </div>
+      </div>
+    </div>
+
+
+    <div class="col-md-4 col-sm-12 mb-4">
+      <div class="card" style="width: 100%;">
+        <img src="./img/13.jpeg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">إسبانيا</h5>
+          <p class="card-text">
+            تشتهر إسبانيا بتنوعها الثقافي وحيويتها، من شواطئ كوستا ديل سول ومدريد الصاخبة إلى تراث الأندلس التاريخي في غرناطة وقرطبة. تتميز بطابعها الفريد، حيث تقام مهرجانات تقليدية مثل "سان فيرمين"، وتجذب عشاق الطعام والتاريخ.          </p>
+          <a href="#" class="btn btn-primary">احجز الان </a>
+        </div>
+      </div>
+    </div>
+
+
+
+    <div class="col-md-4 col-sm-12 mb-4">
+      <div class="card" style="width: 100%;">
+        <img src="./img/14.jpeg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">اليابان</h5>
+          <p class="card-text">
+            تقدم اليابان مزيجًا ساحرًا من التقاليد العريقة والتكنولوجيا الحديثة، حيث يمكن للزوار الاستمتاع بجمال الطبيعة في جبل فوجي وزيارة المعابد التاريخية في كيوتو، بالإضافة إلى تجربة الحياة الحديثة في طوكيو مع الابتكارات التكنولوجية الفريدة.          </p>
+          <a href="#" class="btn btn-primary">احجز الان </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- الكرت الثاني -->
+    <div class="col-md-4 col-sm-12 mb-4">
+      <div class="card" style="width: 100%;">
+        <img src="./img/15.webp" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">تايلاند</h5>
+          <p class="card-text">
+            تعتبر تايلاند واحدة من الوجهات الأكثر شعبية في جنوب شرق آسيا، حيث تجذب السياح بشواطئها الخلابة في فوكيت وجزرها الساحرة، بالإضافة إلى الثقافة العريقة والقصور والمعابد مثل القصر الكبير في بانكوك، وأسواقها الليلية المتنوعة.          </p>
+          <a href="#" class="btn btn-primary">احجز الان </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- الكرت الثالث -->
+    <div class="col-md-4 col-sm-12 mb-4">
+      <div class="card" style="width: 100%;">
+        <img src="./img/16.jpeg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">سويسرا</h5>
+          <p class="card-text">
+            سويسرا هي الوجهة المثالية لعشاق الطبيعة، حيث يمكن الاستمتاع بالمناظر الجبلية الخلابة في جبال الألب، وبحيراتها الجميلة مثل بحيرة جنيف، مع أنشطة التزلج وركوب القطار في أماكن خلابة مثل زيورخ وإنترلاكن.          </p>
+          <a href="#" class="btn btn-primary">احجز الان </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- الكرت الرابع -->
+    <div class="  col-md-4 offset-md-2 col-sm-12 mb-4 lg:me-5 ">
+      <div class="card" style="width: 100%;">
+        <img src="./img/17.jpeg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">مصر</h5>
+          <p class="card-text">
+            تعد مصر وجهة سياحية تاريخية، حيث يمكن للزوار الاستمتاع بمشاهدة الأهرامات وأبو الهول في الجيزة، واستكشاف تاريخ الحضارة الفرعونية في المتاحف والمعابد بالأقصر وأسوان. إلى جانب ذلك، تقدم مصر سياحة شاطئية متميزة على البحر الأحمر في شرم الشيخ والغردقة.          </p>
+          <a href="#" class="btn btn-primary">احجز الان </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- الكرت الخامس -->
+    <div class="col-md-4 col-sm-12 mb-4 ">
+      <div class="card " style="width: 100%;">
+        <img src="./img/18.jpeg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">اليونان</h5>
+          <p class="card-text">
+            اليونان غنية بالتراث الثقافي والأساطير، وتعد جزرها مثل سانتوريني وميكونوس من أشهر الوجهات العالمية بفضل شواطئها البيضاء ومياهها الزرقاء الصافية. كما تحتضن اليونان معالم تاريخية كالأكروبوليس في أثينا، وتجذب محبي الاسترخاء والاستكشاف الثقافي.          </p>
+          <a href="#" class="btn btn-primary">احجز الان </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ------------ -->
+
+<div class="container mt-5">
+  <div class="image-container" data-aos="fade-down">
+      <!-- <img src="." class="img-fluid" alt="صورة مع التأثير"> -->
+  </div>
+</div>
+<!--  -->
+ 
+<div class="container container-custom ">
+  <div class="row">
+      <!-- Card 1 -->
+      <div class="col-md-4 ">
+        <div class="card ">
+            <img src="./img/18.jpeg" class="bg-img" alt="خلفية 3">
+            <div>
+              <img src="./img/17-02-14_09-28-32.jpg" class="profile-img w-25 h-25 rounded z-3 mb-5 " alt="صورة دائرية 3">
+
+            </div>
+            <div class="card-body">
+                <h5>عنوان 3</h5>
+                <p>هذا هو النص الموجود تحت الصورة.</p>
+            </div>
+        </div>
+    </div>
+      <!-- Card 2 -->
+      <div class="col-md-4">
+        <div class="card">
+            <img src="./img/19.webp" class="bg-img" alt="خلفية 3">
+            <div>
+              <img src="./img/17-02-14_09-28-32.jpg" class="profile-img w-25 h-25 rounded z-3 mb-5 " alt="صورة دائرية 3">
+
+            </div>
+            <div class="card-body">
+                <h5>عنوان 3</h5>
+                <p>هذا هو النص الموجود تحت الصورة.</p>
+            </div>
+        </div>
+    </div>
+      <!-- Card 3 -->
+      <div class="col-md-4">
+          <div class="card">
+              <img src="./img/20.jpeg" class="bg-img" alt="خلفية 3">
+              <div>
+                <img src="./img/17-02-14_09-28-32.jpg" class="profile-img w-25 h-25 rounded z-3 mb-5 " alt="صورة دائرية 3">
+
+              </div>
+              <div class="card-body">
+                  <h5>عنوان 3</h5>
+                  <p>هذا هو النص الموجود تحت الصورة.</p>
+              </div>
+          </div>
+      </div>
+  </div>
+</div>
+
+
+ <!-- =------------- -->
+
+ 
+          
+    
+<div class="container mt-5">
+  <div class="card mb-3">
+    <div class="row g-0">
+      <div class="col-md-4">
+        <img src="./img/جبل-مرة.webp" class="img-fluid rounded-start" alt="Coral Reef Image">
+      </div>
+      <div class="col-md-8">
+        <div class="card-body">
+          <h5 class="card-title"> انتعاش السياحة العالمية بعد جائحة كورونا</h5>
+          <p class="card-text"><small class="text-muted">Mon, May 25th 2020</small></p>
+          <p class="card-text">
+            تشهد السياحة العالمية انتعاشًا ملحوظًا بعد تأثير جائحة كورونا. بدأت الدول في إعادة فتح حدودها، مما أدى إلى زيادة الحجوزات الجوية والفندقية. يُظهر تقرير حديث أن الوجهات السياحية الشهيرة مثل أوروبا وآسيا تشهد إقبالًا كبيرًا من السياح، مما يبشر بعودة الحياة إلى قطاع السياحة.          </p>
+          <div class="d-flex">
+            <button class="btn btn-outline-secondary btn-sm me-2">Podcast <i class="fa-solid fa-file"></i></button>
+            <button class="btn btn-outline-secondary btn-sm me-2">05 mins <i class="fa-regular fa-clock"></i></button>
+            <button class="btn btn-outline-primary btn-sm">Play Episode <i class="fa-solid fa-play"></i></button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>      
+
+<!--  -->
+<div class="container mt-5">
+  <div class="card mb-3">
+    <div class="row g-0">
+      <div class="col-md-4">
+        <img src="./img/جبل-مرة.webp" class="img-fluid rounded-start" alt="Coral Reef Image">
+      </div>
+      <div class="col-md-8">
+        <div class="card-body">
+          <h5 class="card-title">زيادة الطلب على السياحة البيئية</h5>
+          <p class="card-text"><small class="text-muted">Mon, May 25th 2020</small></p>
+          <p class="card-text">
+            تزايد الطلب على السياحة البيئية في السنوات الأخيرة، حيث يبحث المسافرون عن تجارب طبيعية مستدامة. تشمل هذه السياحة زيارة المحميات الطبيعية والقيام بأنشطة مثل المشي لمسافات طويلة وركوب الدراجات. تشير الدراسات إلى أن السياحة البيئية تسهم في حماية البيئة وتعزيز الوعي بأهمية الحفاظ على الطبيعة.          </p>
+          <div class="d-flex">
+            <button class="btn btn-outline-secondary btn-sm me-2">Podcast <i class="fa-solid fa-file"></i></button>
+            <button class="btn btn-outline-secondary btn-sm me-2">05 mins <i class="fa-regular fa-clock"></i></button>
+            <button class="btn btn-outline-primary btn-sm">Play Episode <i class="fa-solid fa-play"></i></button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!--  -->
+<div class="container mt-5">
+  <div class="card mb-3">
+    <div class="row g-0">
+      <div class="col-md-4">
+        <img src="./img/جبل-مرة.webp" class="img-fluid rounded-start" alt="Coral Reef Image">
+      </div>
+      <div class="col-md-8">
+        <div class="card-body">
+          <h5 class="card-title">توجهات السياحة في 2024</h5>
+          <p class="card-text"><small class="text-muted">Mon, May 25th 2020</small></p>
+          <p class="card-text">
+            مع اقتراب عام 2024، تظهر توجهات جديدة في مجال السياحة. يتجه المسافرون نحو الرحلات التجريبية والثقافية، حيث يفضلون الانغماس في العادات والتقاليد المحلية. أيضًا، يُعتبر السفر الفاخر والسياحة الصحية من الاتجاهات المتزايدة، مما يعكس تطلعات السياح نحو تجارب فريدة ومريحة.          </p>
+          <div class="d-flex">
+            <button class="btn btn-outline-secondary btn-sm me-2">Podcast <i class="fa-solid fa-file"></i></button>
+            <button class="btn btn-outline-secondary btn-sm me-2">05 mins <i class="fa-regular fa-clock"></i></button>
+            <button class="btn btn-outline-primary btn-sm">Play Episode <i class="fa-solid fa-play"></i></button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!--  -->
+
+
+<div class="container mt-5">
+  <div class="row">
+      <!-- Card 1 -->
+      <div class="col-md-3">
+        <div class="custom-card text-center"> <!-- إضافة text-center لمركزية المحتوى -->
+          <h5 class="ms-2">انستقرام</h5> <!-- العنوان الآن تحت الصورة -->
+
+            <img src="./img/15707869.png" alt="أيقونة 1" class="icon">
+            <a href="https://example.com/1" class="btn btn-link">انتقال إلى الرابط</a>
+        </div>
+    </div>
+    
+
+      <!-- Card 2 -->
+      <div class="col-md-3">
+          <div class="custom-card">
+              
+              <h5 class="ms-2">لنكيد</h5>
+              <img src="./img/circle-linkedin-512.webp" alt="أيقونة 2" class="icon">
+              <a href="https://example.com/2" class="btn btn-link">انتقال إلى الرابط</a>
+          </div>
+      </div>
+
+      <!-- Card 3 -->
+      <div class="col-md-3">
+          <div class="custom-card">
+              <h5 class="ms-2"> تويتر</h5>
+              <img src="./img/free-twitter-logo-icon-2429-thumb.png" alt="أيقونة 3" class="icon">
+
+              <a href="https://example.com/3" class="btn btn-link">انتقال إلى الرابط</a>
+          </div>
+      </div>
+
+      <!-- Card 4 -->
+      <div class="col-md-3">
+          <div class="custom-card">
+              <h5 class="ms-2"> واتس اب </h5>
+              <img src="./img/واتس.webp" alt="أيقونة 4" class="icon ">
+
+              <a href="https://example.com/4" class="btn btn-link">انتقال إلى الرابط</a>
+          </div>
+      </div>
+  </div>
+</div>
+
+
+
+
+<footer class="bg-info opacity-25">
+  <div class="container ">
+    <div class="row text-center">
+      <div class="col-md-4 text-dark">
+        <img src="./img/شعار3.jpg" alt="Good Company" class="footer-logo">
+        <h5>تواصل معنا</h5>
+        <p>Tel: 249 898974849</p>
+        <p>Address:السودان</p>
+        <p>Fax: 876-345-</p>
+      </div>
+      <div class="col-md-4 text-dark">
+        <img src="./img/شعار 2.webp" alt="Important Links" class="footer-logo">
+        <h5> روابط ذات له</h5>
+        <p><a href="#" class="text-dark">الريسية </a></p>
+        <p><a href="#" class="text-dark"> خدمتنا </a></p>
+        <p><a href="#" class="text-dark">رحلاتنا </a></p>
+      </div>
+      <div class="col-md-4 text-dark ">
+        <img src="./img/شعار1.webp" alt="Vision" class="footer-logo">
+        <h5>موقعنا</h5>
+        <p> السودان </p>
+        <p>الخرطوم</p>
+        <p>اتصل بنا </p>
+      </div>
+    </div>
+    <div class="copyright text-dark">
+      COPYRIGHT © 2024 جميع الحقوق محفوظة لدي سوادنير
+    </div>
+  </div>
+</footer>
+
+
+
+
+<script src="./js/script.js"></script>
+    <script src="./bootstrap/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/js/all.min.js"></script>
+
+</body>
+</html>
